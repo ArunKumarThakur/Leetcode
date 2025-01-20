@@ -1,7 +1,7 @@
 package Leetcode;
 import java.util.*;
 public class Leetcode2661 {
-    public int firstCompleteIndex(int[] arr, int[][] mat) {
+    public int solve(int[] arr, int[][] mat) {
         HashMap<Integer, Integer> rowMap = new HashMap<>();
         HashMap<Integer, Integer> colMap = new HashMap<>();
         int row = mat.length;
@@ -32,7 +32,7 @@ public class Leetcode2661 {
         int []arr = {1,3,4,2};
         int [][]mat = {{1,4}, {2,3}};
         Leetcode2661 l1 = new Leetcode2661();
-        int idx = l1.firstCompleteIndex(arr, mat);
+        int idx = l1.solve(arr, mat);
         System.out.println(idx);
     }
 }
